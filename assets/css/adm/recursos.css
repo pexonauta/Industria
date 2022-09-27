@@ -1,0 +1,13 @@
+form {
+    display: flex;
+}
+
+.form-group {
+    width: 40%;
+    display: flex;
+}
+
+.form-group input,
+.form-group button {
+    margin-right: 20px;
+}

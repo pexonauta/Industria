@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ALL CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <!-- Corpo -->
+    <link rel="stylesheet" href="../../assets/css/abas/form.css">
+
+    <!-- Title Login -->
+    <title>Sesi/Senai</title>
+</head>
+
+<body>
+    <main>
+        <div class="voltar">
+            <a href="agendar.html"><</a>
+            <p>
+                <span id="sala">Sala: ?</span>
+                <span id="bloco">Bloco: ?</span>
+                <span id="capa">Capacidade: ?</span>
+            </p>
+        </div>
+            <form method="get" action="" class="form" id="form">
+                <div class="flex">
+                    <div class="form-group">
+                        <label>Motivo De Uso:</label>
+                        <input class="input-group" type="text" name="motivo" placeholder="Ex: Aula Interativa" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Email:</label>
+                        <input class="input-group" type="email" name="email" placeholder="Ex: professor@gmail.com" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="form-group">
+                        <label>Data De Uso:</label>
+                        <input type="date" autocomplete="off" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Data De Termino:</label>
+                        <input type="date" autocomplete="off" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>O Que Voce Precisa:</label>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Ex: Arduino, Folha A4" required></textarea>
+                </div>
+                <div class="form-hour">
+                    <label class="container-hour">Manhã
+                        <input type="radio" name="periodo" value="manha" id="manha" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-hour">Tarde
+                        <input type="radio" name="periodo" value="tarde" id="tarde" required>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container-hour">Noturno
+                        <input type="radio" name="periodo" value="noite" id="noite" required>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="hora" id="horas">
+                </div>
+                <div class="input-group">
+                    <button type="submit" name="solicitar">Solicitar</button>
+                </div>
+            </form>
+    </main>
+
+    <script src="../../assets/js/formAgendar.js"></script>
+</body>
+
+</html>

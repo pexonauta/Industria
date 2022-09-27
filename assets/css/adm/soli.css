@@ -1,0 +1,18 @@
+main {
+    width: 90%;
+    height: 80%;
+    left: 50%;
+}
+
+table thead {
+    text-align: center;
+}
+
+table tbody {
+    text-align: center;
+}
+
+.btn {
+    color: #fff !important;
+    font-weight: bold !important;
+}

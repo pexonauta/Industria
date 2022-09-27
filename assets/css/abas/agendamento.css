@@ -1,0 +1,268 @@
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+}
+
+.navbar.on .navbar-hamburguer div {
+    right: auto;
+}
+
+
+main {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5%;
+}
+
+.block-charge {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.pesquisa {
+    width: 94%;
+    margin: 5px 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color2);
+    color: #000;
+}
+
+.pesquisa::placeholder {
+    color: #000;
+    font-size: 1.2em;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block1 {
+    margin-right: 15px;
+}
+
+.block1 span,
+.block2 span {
+    color: #222;
+    font-size: 1.2em;
+}
+
+.block1 select,
+.block2 select {
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    border: 1px solid #222;
+    color: var(--color2);
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+    flex-direction: column;
+}
+
+.container .sala {
+    width: 96%;
+    height: 100px;
+    background-color: var(--color2);
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.container .sala .detalhes {
+    padding-top: 10px;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .sala .detalhes #sala,
+.container .sala .detalhes #bloco {
+    margin-right: 30px;
+}
+
+.container .sala .info {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px;
+    padding-top: 10px;
+}
+
+.sala a {
+    margin-left: 5px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: var(--color5);
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sala a:hover {
+    background-color: #252563;
+}
+
+.dispo,
+.analise,
+.close {
+    font-weight: 600;
+}
+
+.dispo {
+    color: #0ec745;
+}
+
+.analise {
+    color: #ddda16;
+}
+
+.close {
+    color: rgb(223, 24, 24)
+}
+
+.buttons {
+    height: 10%;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a button {
+    padding: 15px 20px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    color: var(--color2);
+    background-color: var(--color5);
+    border: none;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #117b9e;
+    color: var(--color1);
+}
+
+.buttons .btn-active {
+    background-color: #117b9e;
+    color: var(--color1);
+}
+
+.buttons button:nth-child(even) {
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.cancelar {
+    font-weight: bold;
+    color: #ff6044;
+}
+
+.container .sala .info #data {
+    color: var(--color1);
+    font-weight: bold;
+}
+
+.container .sala .info #dia {
+    margin-left: 5px;
+    color: rgb(199, 199, 199);
+    font-size: 1.2em;
+}
+
+.container .sala .info a {
+    color: #ff6044;
+}
+
+footer {
+    position: relative !important;
+}
+
+@media (min-width: 760px) {
+
+    .block-charge {
+        width: 90%;
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .block-charge .pesquisa {
+        width: 40%;
+    }
+
+    .block1,
+    .block2 {
+        display: flex;
+    }
+
+    .block1 span,
+    .block2 span {
+        margin-right: 5px;
+    }
+
+    .container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container .sala .detalhes {
+        font-size: 1em;
+    }
+
+    .container .sala .info {
+        margin-right: 10px;
+    }
+
+    .container .sala .info #data {
+        width: 90%;
+    }
+
+    .buttons {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 960px) {
+    .block-charge {
+        margin-left: 30px;
+    }
+
+    .container {
+        width: 80%;
+        height: 300px !important;
+        margin: auto;
+    }
+
+    .container .sala {
+        margin-bottom: 10px;
+        width: 95%;
+    }
+
+    .container .sala .info {
+        margin-left: 10px;
+    }
+
+    .container .sala .info #data {
+        width: 60%;
+        margin-right: 5pxpx;
+    }
+}

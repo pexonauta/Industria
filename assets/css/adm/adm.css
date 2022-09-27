@@ -1,0 +1,29 @@
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+}
+
+header {
+    justify-content: space-around !important;
+}
+
+.div a {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--color2);
+    color: #fff;
+    transition: all 0.3s ease-in;
+    cursor: pointer;
+}
+
+.div a:hover {
+    background-color: #222;
+    color: #fff;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/adm/index.css">
+    <title>Industria</title>
+</head>
+<body>
+    <header>
+        <h1>Administração</h1>
+    </header>
+    <div class="navigation">
+        <div class="adm">
+            <img src="../../assets/img/adm-user.jpg" alt="">
+        </div>
+        <div class="links">
+            <ul>
+                <li class="active">
+                    <a href="#">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Início</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="soli.html">
+                        <span class="icon"><ion-icon name="newspaper-outline"></ion-icon></span>
+                        <span class="title">Solicitações</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="agenda.html">
+                        <span class="icon"><ion-icon name="calendar-outline"></ion-icon></span>
+                        <span class="title">Agendamentos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="recursos.html">
+                        <span class="icon"><ion-icon name="add-outline"></ion-icon></span>
+                        <span class="title">Adicionar Sala,Bloco e Professor</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="admin.html">
+                        <span class="icon"><ion-icon name="shield-checkmark-outline"></ion-icon></span>
+                        <span class="title">Administração</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="../../index.html">
+                        <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                        <span class="title">Sair</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle"></div>
+    </div>
+    <main>
+        <div class="card">
+            <div class="simbulo">
+                <ion-icon name="receipt-outline"></ion-icon>
+                <h2>Solitações</h2>
+                <span class="number">3</span>
+            </div>
+            <div class="text">
+                <p>Números de Pedidos Para Reservar sala.</p>
+            
+                <a href="soli.html"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="simbulo">
+                <ion-icon name="chatbubble-outline"></ion-icon>
+                <h2>Notificações</h2>
+                <span class="number">3</span>
+            </div>
+            <div class="text">
+                <p>Número de salas reservadas</p>
+            
+                <a href="agenda.html"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+            </div>
+
+        </div>
+        <div class="card">
+            <div class="simbulo">
+                <ion-icon name="person-add-outline"></ion-icon>
+                <h2>Usuarios</h2>
+                <span class="number">3</span>
+            </div>
+            <div class="text">
+                <p>Pedidos De Usuarios Para Entrar.</p>
+            
+                <a href="admin.html"><ion-icon name="arrow-redo-outline"></ion-icon></a>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <h2>Industria</h2>
+        <p>Feito Por Davi</p>
+    </footer>
+
+    <script>
+        let navigation = document.querySelector('.navigation')
+        let btn = document.querySelector('.toggle')
+        btn.addEventListener('click', () => {
+            navigation.classList.toggle('on')
+        })
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

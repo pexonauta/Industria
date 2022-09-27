@@ -1,0 +1,47 @@
+/* Propriedades de cor fontes entre outras */
+
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+}
+
+.volt {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.volt a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--color5);
+    color: var(--color1);
+    font-size: 1.5em;
+    font-weight: 600;
+    transition: background 0.3s ease-in;
+}
+
+.volt a:hover {
+    background-color: var(--color2);
+}
+
+form {
+    top: 53% !important;
+}
+
+@media (min-width: 720px) {
+    .volt {
+        left: 28%;
+    }
+
+    form {
+        top: 60% !important;
+    }
+}

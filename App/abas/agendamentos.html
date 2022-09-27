@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ALL CSS -->
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../assets/css/user/alerts.css">
+    <!-- Header CSS -->
+    <link rel="stylesheet" href="../../assets/css/header.css">
+    <link rel="stylesheet" href="../../assets/css/footer.css">
+    <!-- Corpo CSS -->
+    <link rel="stylesheet" href="../../assets/css/abas/agendar.css">
+    <link rel="stylesheet" href="../../assets/css/abas/agendamento.css">
+    <!-- Title Login -->
+    <title>Industria</title>
+</head>
+
+<body>
+    <header>
+        <h1>Industria</h1>
+
+        <nav class="navbar">
+            <div class="navbar-hamburguer">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="navbar-menu">
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="agendar.html" target="_self">Agendar</a></li>
+                    <li><a href="agendamentos.html" target="_self" class="active">Agendamentos</a></li>
+                </ul>
+            </div>
+            <div class="user">
+                <ion-icon name="person-outline" id="perfil"></ion-icon>
+                <div class="user-menu">
+                    <ul>
+                        <li><a href="perfil.html">Perfil</a></li>
+                        <li><a href="notficacao.html">Notificações</a></li>
+                        <li><a href="../../index.html">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="block-charge">
+            <input type="text" class="pesquisa" placeholder="Pesquise:" autocomplete="off">
+            <div class="block">
+                <div class="block1">
+                    <span class="select">Bloco:</span>
+                    <select name="" id="">
+                        <option value="" selected>Todos</option>
+                        <option value="">A</option>
+                        <option value="">B</option>
+                        <option value="">C</option>
+                    </select>
+                </div>
+                <div class="block2">
+                    <span class="select">Disponibilidade:</span>
+                    <select name="" id="">
+                        <option value="" selected>Disponível</option>
+                        <option value="">Em Análise</option>
+                        <option value="">Fechado</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">Filtrar</button>
+        </div>
+        <div class="container">
+            <div class="sala">
+                <div class="detalhes">
+                    <p><span id="sala">Sala: C17</span> <span id="bloco">Bloco: A </span>Período: Manhã</p>
+                </div>
+                <div class="info"><span id="data">Data de Uso: <span id="dia">23/09<span class="dispo">Aceito</span></span></span>
+                    <p class="cancelar">Cancelar</p><a href="">></a>
+                </div>
+            </div>
+            <div class="sala">
+                <div class="detalhes">
+                    <p><span id="sala">Sala: C17</span> <span id="bloco">Bloco: A </span>Período: Tarde</p>
+                </div>
+                <div class="info"><span id="data">Data de Uso: <span id="dia">23/09<span class="analise">Em Análise</span></span></span>
+                    <p class="cancelar">Cancelar</p><a href="">></a>
+                </div>
+            </div>
+            <div class="sala">
+                <div class="detalhes">
+                    <p><span id="sala">Sala: C17</span> <span id="bloco">Bloco: A </span>Período: Noite</p>
+                </div>
+                <div class="info"><span id="data">Data de Uso: <span id="dia">23/09<span class="analise">Em Análise</span></span></span>
+                    <p class="cancelar">Cancelar</p><a href="">></a>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="btn-active">1</button>
+            <button>2</button>
+            <button>3</button>
+        </div>
+
+    </main>
+    <footer>
+        <h2>Industria</h2>
+        <div class="redes-socias">
+            <a href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+            <a href="#">
+                <ion-icon name="logo-google"></ion-icon>
+            </a>
+        </div>
+    </footer>
+    <!-- Script Menu -->
+    <script src="../../assets/js/menu.js"></script>
+    <!-- Script Icons-->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

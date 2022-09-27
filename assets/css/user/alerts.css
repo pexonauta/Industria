@@ -1,0 +1,77 @@
+/* Propriedades de cor fontes entre outras */
+
+:root {
+    /* Cores Que Serão do site */
+    --bg-danger: #f8d7da;
+    --bg-warning: #fff3cd;
+    --bg-succes: #d4edda;
+    --bg-primary: #d1ecf1;
+    --bg-dark: #d6d8d9;
+
+    /* Propriedades Do Register */
+    --color-danger: #721c24;
+    --color-warning: #856404;
+    --color-succes: #155724;
+    --color-primary: #0c5460;
+    --color-dark: #1b1e21;
+}
+
+.alert {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 20px;
+}
+
+.alert-menu {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    padding: 20px;
+    z-index: 1;
+}
+
+.alert-warning {
+    color: var(--color-warning);
+    background-color: var(--bg-warning);
+}
+
+.alert-danger {
+    color: var(--color-danger);
+    background-color: var(--bg-danger);
+}
+
+.alert-succes {
+    color: var(--color-succes);
+    background-color: var(--bg-succes);
+}
+
+.alert-primary {
+    color: var(--color-primary);
+    background-color: var(--bg-primary);
+}
+
+.class-succes {
+    border: 3px solid var(--color-succes);
+    box-shadow: 0px 0px 15px 8px var(--bg-succes);
+}
+
+.class-warning {
+    border: 3px solid var(--color-warning);
+    box-shadow: 0px 0px 15px 8px var(--bg-warning-);
+}
+
+.class-danger {
+    border: 3px solid var(--color-danger);
+    box-shadow: 0px 0px 15px 8px var(--bg-danger);
+}

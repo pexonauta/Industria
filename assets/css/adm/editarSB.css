@@ -1,0 +1,156 @@
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+}
+
+body {
+    background: var(--color2);
+}
+
+main {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    width: 460px;
+}
+
+.voltar {
+    position: absolute;
+    top: -20%;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    font-weight: 600;
+
+}
+
+.voltar a {
+    color: var(--color1);
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background: var(--color5);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.voltar a:hover {
+    background: #252563;
+    transform: scale(1.2);
+}
+
+.container {
+    margin-top: 10px;
+}
+
+#form {
+    margin-top: 5%;
+}
+
+.form-group label {
+    color: var(--color1);
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--color5);
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--color1);
+    font-weight: 600;
+}
+
+.form-group input::placeholder {
+    color: var(--color5);
+    font-weight: 600;
+}
+
+.form-group textarea {
+    color: var(--color5);
+    width: 100%;
+    background-color: rgb(231, 228, 228);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--color2);
+}
+
+.form-group textarea::placeholder {
+    color: var(--color5);
+}
+
+#att {
+    padding-top: 5%;
+}
+
+.input-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px;
+    background: #171738;
+    border: 1px solid var(--color5);
+    color: var(--color1);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.input-group button:hover {
+    transform: scale(1.2);
+    font-weight: 700;
+    background: #252563;
+}
+
+@media (min-width: 760px) {
+    main {
+        width: 700px;
+        top: 55%;
+    }
+
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .form-group input {
+        width: 90%;
+    }
+
+    #att {
+        margin-top: 10%;
+    }
+}

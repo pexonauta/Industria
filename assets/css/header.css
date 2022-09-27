@@ -1,0 +1,237 @@
+/* Propriedades de cor fontes entre outras */
+
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--color2);
+    color: var(--color1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.navbar {
+    display: flex;
+}
+
+.active {
+    color: var(--color1) !important;
+}
+
+.navbar-hamburguer {
+    margin-top: 15px;
+    margin-right: 40px;
+    width: 25px;
+
+    cursor: pointer;
+}
+
+.navbar-hamburguer div {
+    width: 25px;
+    height: 3px;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.navbar.on .navbar-hamburguer div {
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    top: 5%;
+    right: auto;
+    background-color: rgb(255, 255, 255);
+    z-index: 2;
+}
+
+.navbar.on .navbar-hamburguer div:nth-child(1) {
+    transform: rotate(-45deg);
+}
+
+.navbar.on .navbar-hamburguer div:nth-child(2) {
+    display: none;
+}
+
+.navbar.on .navbar-hamburguer div:nth-child(3) {
+    transform: rotate(45deg);
+}
+
+.navbar.on .navbar-menu {
+    display: block !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100vh;
+    background-color: var(--color5);
+    animation: fundoAbrir 0.6s ease-in-out;
+    z-index: 1;
+}
+
+@keyframes fundoAbrir {
+    0% {
+        width: 0;
+    }
+
+    50% {}
+
+    100% {
+        width: 60%;
+    }
+}
+
+.navbar.on .navbar-menu ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style: none;
+    text-align: center;
+}
+
+.navbar.on .navbar-menu ul li {
+    padding: 10px;
+}
+
+.navbar.on .navbar-menu ul li a {
+    width: 100%;
+    text-decoration: none;
+    color: var(--color2);
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navbar.on .navbar-menu ul li a:hover {
+    color: #e4e4e4;
+    text-decoration: underline;
+}
+
+.user {
+    margin: 5px 30px 0 0;
+    z-index: 2;
+}
+
+.user ion-icon {
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+
+.user .user-menu {
+    display: none;
+}
+
+.user.on .user-menu {
+    margin-top: 5px;
+    width: 120px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: block !important;
+    position: absolute;
+    right: 0;
+    border-radius: 0 0 5px 5px;
+}
+
+.user.on .user-menu ul {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+.user.on .user-menu ul li {
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.user.on .user-menu li a {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.user.on .user-menu li a:hover {
+    text-decoration: underline;
+    color: rgb(202, 202, 202);
+}
+
+.user .user-menu li.active a {
+    color: var(--color2);
+}
+
+.user .user-menu li.active a:hover {
+    color: var(--color2);
+}
+
+@media (min-width: 720px) {
+    header h1 {
+        margin-left: 20px;
+    }
+
+    .navbar.on .navbar-hamburguer {
+        display: block !important;
+    }
+
+    .navbar-hamburguer {
+        display: none;
+    }
+
+    .navbar-menu {
+        display: block;
+    }
+
+    .navbar-menu ul {
+        display: flex;
+        margin-top: 10px;
+        list-style: none;
+    }
+
+    .navbar-menu ul li {
+        margin-right: 50px;
+    }
+
+    .navbar-menu ul li a {
+        width: 100%;
+        text-decoration: none;
+        color: var(--color5);
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .navbar-menu ul li a:hover {
+        color: #e4e4e4;
+        text-decoration: underline;
+    }
+
+    .user .user-menu {
+        margin-right: 60px;
+    }
+
+    .user.on .user-menu {
+        margin-right: 18px;
+    }
+}

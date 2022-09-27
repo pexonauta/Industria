@@ -1,0 +1,400 @@
+/* Propriedades de cor fontes entre outras */
+
+:root {
+    /* Cores Que Serão do site */
+    --color1: #FFFFFA;
+    --color2: #19647E;
+    --color3: #78CDD7;
+    --color4: #685044;
+    --color5: #171738;
+
+    /* Propriedades Do Register */
+    --bg-fundo: #19647E;
+
+    /* Card */
+    --card1: #df9e13;
+    --card2: #0c0266;
+    --card3: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 12vh;
+    background-color: var(--color5);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+header h1 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: var(--color2);
+    border-radius: 0 8px 8px 0px;
+    overflow: scroll;
+    transition: all 0.5s ease-in;
+    z-index: 2;
+}
+
+.navigation::-webkit-scrollbar {
+    display: none;
+}
+
+.navigation.on {
+    width: 300px;
+}
+
+.toggle {
+    position: fixed;
+    bottom: 10px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    right: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.6s ease-in-out;
+}
+
+.toggle::before {
+    content: '';
+    position: fixed;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--color2);
+    transform: translateY(-5px);
+    transition: 1s;
+}
+
+.toggle::after {
+    content: '';
+    position: fixed;
+    width: 26px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: var(--color2);
+    transform: translateY(5px);
+    transition: 1s;
+}
+
+.navigation.on .toggle::before {
+    transform: translateY(0px) rotate(-405deg);
+}
+
+.navigation.on .toggle::after {
+    transform: translateY(0px) rotate(225deg);
+}
+
+.navigation.on .toggle {
+    left: 220px;
+}
+
+.adm {
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    width: 100%;
+
+}
+
+.adm img {
+    width: 60px;
+    height: 60px;
+    margin-top: 5px;
+    margin-left: -100px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.navigation.on .adm img {
+    margin-top: 0;
+    width: 80px;
+    height: 70px;
+    margin-left: 5px;
+}
+
+.adm p {
+    position: relative;
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.navigation .links ul {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+}
+
+.navigation .links ul li {
+    position: relative;
+    width: 100%;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.navigation .links ul li:last-child {
+    margin-bottom: 100%;
+}
+
+.navigation .links ul li.active {
+    transition: all 0.4s ease-in;
+    background: none;
+}
+
+.navigation.on .links ul li.active {
+    background-color: #222;
+}
+
+.navigation .links ul li.active .icon {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.navigation .links ul li.active:hover a {
+    color: #fff;
+}
+
+.navigation .links ul li:hover {
+    background-color: #fff;
+}
+
+.navigation .links ul li:hover::before {
+    content: '';
+}
+
+.navigation .links ul li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+
+.navigation .links ul li:hover a {
+    color: #222;
+
+}
+
+.navigation .links ul li a .icon {
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.navigation .links ul li a .icon ion-icon {
+    font-size: 1.7e5m;
+}
+
+.navigation ul li a .title {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    text-align: start;
+    white-space: nowrap;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8vh;
+    background-color: var(--color5);
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-around;
+}
+
+footer h2,
+footer p {
+    margin: 0;
+    color: #fff;
+}
+
+.navigation~main {
+    z-index: -1;
+}
+
+main {
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3 ease-out;
+    overflow: hidden;
+}
+
+.card:nth-child(1) {
+    background: var(--card1);
+}
+
+.card:nth-child(2) {
+    background: var(--card2);
+}
+
+.card:nth-child(3) {
+    background: var(--card3);
+}
+
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.card .simbulo {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.card .simbulo ion-icon {
+    color: #222;
+    font-size: 1.5em;
+}
+
+.card .simbulo h2 {
+    color: #fff;
+}
+
+.card .simbulo h2,
+.card .simbulo .number {
+    position: absolute;
+    left: 90px;
+}
+
+.card .simbulo .number {
+    color: #fff;
+    font-size: 1.5em;
+    left: 240px;
+}
+
+.card .text {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 600;
+    width: 100%;
+}
+
+.card .text p {
+    width: 70%;
+}
+
+.card .text a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    height: 30px;
+    border-radius: 15px;
+    background: #222;
+    color: #3072d4;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.card .text a ion-icon {
+    font-size: 1.5em;
+}
+
+.card .text a:hover {
+    transform: scale(1.2);
+    color: #fff;
+}
+
+.card .text a:hover ion-icon {
+    transform: scale(1.5);
+
+}
+
+.tabela {
+    height: 450px !important;
+    overflow: scroll !important;
+    padding-bottom: 8%;
+
+}
+
+.tabela::-webkit-scrollbar {
+    display: none;
+}
+
+@media (min-height: 720px) {
+    .tabela {
+        height: 700px;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 720px) {
+    main {
+        display: grid;
+        left: 55%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        margin-right: 30px;
+    }
+
+    .card:nth-child(2) .simbulo h2,
+    .card:nth-child(2) .simbulo .number {
+        left: 430px;
+    }
+
+    .card:nth-child(2) .simbulo .number {
+        left: 580px;
+    }
+}
+
+@media (min-width: 1120px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .card:nth-child(3) .simbulo h2,
+    .card:nth-child(3) .simbulo .number {
+        left: 760px;
+    }
+
+    .card:nth-child(3) .simbulo .number {
+        left: 860px;
+    }
+}
