@@ -1,13 +1,15 @@
-/* Propriedades De corpo */
+/* Propriedades de cor fontes entre outras */
+
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
-    /* Propriedades Do home */
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb4d;
 }
 
 main {
@@ -26,7 +28,7 @@ main {
 }
 
 .container h1 {
-    color: #fff;
+    color: var(--color1);
     font-weight: 700;
     font-size: 3em;
     text-transform: uppercase;
@@ -46,7 +48,7 @@ main {
     padding: 5px;
     color: var(--color1);
     border-radius: 5px;
-    background-color: var(--color5);
+    background-color: var(--color4);
 
     font-size: 1.2em;
     font-weight: 600;
@@ -57,7 +59,7 @@ main {
 }
 
 .container a:hover {
-    background-color: var(--color2);
+    background-color: var(--color3);
 }
 
 footer {
@@ -76,12 +78,12 @@ footer {
 .redes-socias a {
     margin-right: 20px;
     font-size: 2em;
-    color: var(--color5);
+    color: var(--color4);
     transition: 0.3s;
 }
 
 .redes-socias a:hover {
-    color: var(--color1);
+    color: var(--color3);
     transform: scale(1.7);
 }
 

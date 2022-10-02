@@ -1,13 +1,15 @@
+/* Propriedades de cor fontes entre outras */
+
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
-    /* Propriedades Do Register */
-    --bg-fundo: #19647E;
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb91;
 }
 
 main {
@@ -28,80 +30,7 @@ main {
 .sala p {
     position: relative;
     width: 70%;
-    color: #fff;
-    font-weight: 600;
-}
-
-.sala a {
-    text-align: center;
-    position: relative;
-    width: 20%;
-    padding: 5px;
-    color: rgb(233, 42, 42);
-}
-
-footer {
-    position: absolute;
-}
-
-@media (min-width: 760px) {
-    .container {
-        margin-top: 8%;
-    }
-
-    .container .sala {
-        height: 120px;
-    }
-
-    .sala p {
-        width: 60%;
-    }
-
-    .sala a {
-        width: 100px;
-    }
-
-    footer {
-        position: absolute;
-        bottom: 0;
-    }
-}
-
-@media (min-width: 960px) {
-    .container {
-        margin-top: 4%;
-    }
-}:root {
-    /* Cores Que Serão do site */
-    --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
-
-    /* Propriedades Do Register */
-    --bg-fundo: #19647E;
-}
-
-main {
-    height: 70vh;
-    padding: 0;
-}
-
-.container {
-    height: auto;
-}
-
-.sala {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.sala p {
-    position: relative;
-    width: 70%;
-    color: #fff;
+    color: var(--color1);
     font-weight: 600;
 }
 

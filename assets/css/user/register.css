@@ -3,17 +3,18 @@
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
     /* Propriedades Do Register */
-    --bg-fundo: #19647E;
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb4d;
 }
 
 body {
-    background: var(--bg-fundo);
+    background: var(--color4);
 }
 
 main {
@@ -25,7 +26,8 @@ main {
     width: 400px;
     height: 500px;
 
-    background: rgba(255, 255, 255, 0.37);
+    background: var(--bg-main);
+    border: 1px solid var(--color1);
     border-radius: 15px;
 
     display: flex;
@@ -65,16 +67,16 @@ main {
 
     background: transparent;
 
-    border: 1px solid var(--color3);
+    border: 1px solid var(--color4);
     border-radius: 10px;
     padding: 5px;
 
-    color: #fff;
+    color: var(--color1);
     font-size: 1.2em;
 }
 
 .input-group::placeholder {
-    color: #fff;
+    color: var(--color1);
     padding-left: 5px;
 }
 
@@ -92,7 +94,7 @@ main {
 
     border: 1px solid var(--color3);
     border-radius: 5px;
-    background: var(--color5);
+    background: var(--color4);
 
 
     cursor: pointer;
@@ -100,12 +102,14 @@ main {
     font-weight: bold;
     font-size: 1em;
 
-    color: var(--color3);
+    color: var(--color1);
+    transition: all 0.5s ease-in-out;
 }
 
 .form-button button:hover {
 
     color: var(--color1);
+    transform: scale(1.1);
     box-shadow: 0 0 5px var(--color3),
         0 0 25px var(--color3),
         0 0 50px var(--color3),
@@ -135,7 +139,7 @@ main {
 }
 
 .link ul li a:hover {
-    color: rgb(5, 122, 131);
+    color: var(--color3);
     text-decoration: underline;
 }
 

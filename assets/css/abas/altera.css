@@ -3,13 +3,13 @@
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
-    /* Propriedades Do Register */
-    --bg-fundo: #19647E;
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb91;
 }
 
 .volt {
@@ -21,7 +21,7 @@
 .volt a {
     padding: 5px 10px;
     border-radius: 5px;
-    background-color: var(--color5);
+    background-color: var(--color4);
     color: var(--color1);
     font-size: 1.5em;
     font-weight: 600;

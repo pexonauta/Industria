@@ -1,13 +1,19 @@
+/* Propriedades de cor fontes entre outras */
+
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
-    /* Propriedades Do Register */
-    --bg-fundo: #19647E;
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb91;
+}
+
+body {
+    background-color: var(--bg-main);
 }
 
 .navbar.on .navbar-hamburguer div {
@@ -17,60 +23,13 @@
 
 main {
     width: 100%;
-    height: auto;
-    margin-bottom: 5%;
-}
-
-.block-charge {
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.pesquisa {
-    width: 94%;
-    margin: 5px 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid var(--color2);
-    color: #000;
-}
-
-.pesquisa::placeholder {
-    color: #000;
-    font-size: 1.2em;
-    font-weight: 600;
-    font-style: italic;
-}
-
-.block {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.block1 {
-    margin-right: 15px;
-}
-
-.block1 span,
-.block2 span {
-    color: #222;
-    font-size: 1.2em;
-}
-
-.block1 select,
-.block2 select {
-    padding: 2px;
-    border-radius: 5px;
-    font-size: 1.1em;
-    border: 1px solid #222;
-    color: var(--color2);
-    text-align: center;
+    height: 400px;
+    max-height: 900px;
 }
 
 .container {
     width: 100%;
-    height: 50%;
+    height: 80%;
     margin-top: 30px;
     flex-direction: column;
 }
@@ -78,14 +37,13 @@ main {
 .container .sala {
     width: 96%;
     height: 100px;
-    background-color: var(--color2);
     margin: 10px;
     border-radius: 10px;
 }
 
 .container .sala .detalhes {
     padding-top: 10px;
-    color: #fff;
+    color: var(--color1);
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
@@ -108,8 +66,6 @@ main {
     margin-left: 5px;
     padding: 5px 15px;
     border-radius: 10px;
-    background-color: var(--color5);
-    color: var(--color1);
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 700;
@@ -118,7 +74,7 @@ main {
 }
 
 .sala a:hover {
-    background-color: #252563;
+    background-color: var(--color2);
 }
 
 .dispo,
@@ -140,7 +96,7 @@ main {
 }
 
 .buttons {
-    height: 10%;
+    height: 20%;
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -151,20 +107,8 @@ main {
     padding: 15px 20px;
     font-size: 1.3em;
     border-radius: 5px;
-    color: var(--color2);
-    background-color: var(--color5);
     border: none;
     cursor: pointer;
-}
-
-.buttons button:hover {
-    background-color: #117b9e;
-    color: var(--color1);
-}
-
-.buttons .btn-active {
-    background-color: #117b9e;
-    color: var(--color1);
 }
 
 .buttons button:nth-child(even) {
@@ -193,7 +137,8 @@ main {
 }
 
 footer {
-    position: relative !important;
+    position: absolute;
+    bottom: 0;
 }
 
 @media (min-width: 760px) {

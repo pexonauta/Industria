@@ -1,19 +1,24 @@
+/* Propriedades de cor fontes entre outras */
+
 :root {
     /* Cores Que Serão do site */
     --color1: #FFFFFA;
-    --color2: #19647E;
-    --color3: #78CDD7;
-    --color4: #685044;
-    --color5: #171738;
+    --color2: #048ABF;
+    --color3: #049DBF;
+    --color4: #012340;
+    --color5: #101A26;
 
-    /* Propriedades Do Register */
-    --bg-fundo: #19647E;
+    --bg-fundo: #D8FFDB;
+    --bg-main: #d8ffdb91;
 }
 
 .navbar.on .navbar-hamburguer div {
     right: auto;
 }
 
+body {
+    background-color: var(--bg-main);
+}
 
 main {
     width: 100%;
@@ -30,12 +35,12 @@ main {
     margin: 5px 10px;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid var(--color2);
+    border: 1px solid var(--color4);
     color: #000;
 }
 
 .pesquisa::placeholder {
-    color: #000;
+    color: var(--color4);
     font-size: 1.2em;
     font-weight: 600;
     font-style: italic;
@@ -48,7 +53,7 @@ main {
 }
 
 .block-charge button {
-    background-color: var(--color5);
+    background-color: var(--color4);
     padding: 10px;
     color: var(--color1);
     border-radius: 5px;
@@ -57,13 +62,17 @@ main {
     margin-left: 10px;
 }
 
+.block-charge button:hover {
+    background-color: var(--color2);
+}
+
 .block1 {
     margin-right: 15px;
 }
 
 .block1 span,
 .block2 span {
-    color: #222;
+    color: var(--color5);
     font-size: 1.2em;
 }
 
@@ -72,8 +81,8 @@ main {
     padding: 2px;
     border-radius: 5px;
     font-size: 1.1em;
-    border: 1px solid #222;
-    color: var(--color2);
+    border: 1px solid var(--color4);
+    color: var(--color4);
     text-align: center;
 }
 
@@ -81,9 +90,9 @@ main {
     background-color: transparent;
     border-radius: 5px;
     padding: 2px;
-    color: var(--color5);
+    color: var(--color4);
     font-weight: 600;
-    border: 1px solid rgb(218, 218, 218);
+    border: 1px solid var(--color4);
 }
 
 .container {
@@ -96,14 +105,14 @@ main {
 .container .sala {
     width: 96%;
     height: 100px;
-    background-color: var(--color2);
+    background-color: var(--color4);
     margin: 10px;
     border-radius: 10px;
 }
 
 .container .sala .detalhes {
     padding-top: 10px;
-    color: #fff;
+    color: var(--color1);
     font-size: 1.2em;
     font-weight: 600;
     text-align: center;
@@ -136,7 +145,7 @@ main {
 }
 
 .sala a:hover {
-    background-color: #252563;
+    background-color: var(--color2);
 }
 
 .dispo,
@@ -168,19 +177,19 @@ main {
     padding: 15px 20px;
     font-size: 1.3em;
     border-radius: 5px;
-    color: var(--color2);
-    background-color: var(--color5);
+    color: var(--color1);
+    background-color: var(--color4);
     border: none;
     cursor: pointer;
 }
 
 .buttons button:hover {
-    background-color: #117b9e;
+    background-color: var(--color2);
     color: var(--color1);
 }
 
 .buttons .btn-active {
-    background-color: #117b9e;
+    background-color: var(--color3);
     color: var(--color1);
 }
 
